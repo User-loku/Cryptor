@@ -1,0 +1,179 @@
+import random
+import time
+
+print("----Loku's Cryption 2----")
+
+dokey = input("Do you need a new key?\ny/n : ")
+
+if dokey == "y":
+    dokey2 = input("Custom Key?\ny/n : ")
+
+    if dokey2 == "n":
+        print("Making Random Key")
+        time.sleep(1)
+        defkey = "~!@#$%^&*()_+`1234567890-="
+
+        nkey = random.sample(defkey, 26)
+
+        print("".join(nkey))
+
+        listToStr = ''.join([str(elem) for elem in nkey])
+
+        nkey = listToStr
+
+        f = open("key.txt", "w")
+        f.write(nkey)
+        print("Key is inserted into C:/Users/(your username)/PycharmProjects/Encryptor/key.txt"
+            "\nit will be automatically used in future encryption and decryption")
+        exit()
+    elif dokey2 == "y":
+        custkey = input("Copy And Paste The Key : ")
+
+        custkeylen = len(custkey)
+        print(custkeylen)
+        if custkeylen == 26:
+            print("".join(custkey))
+
+            listToStr = ''.join([str(elem) for elem in custkey])
+
+            f = open("key.txt", "w")
+            f.write(custkey)
+            print("Key is inserted into C:/Users/(your username)/PycharmProjects/Encryptor/key.txt"
+                  "\nit will be automatically used in future encryption and decryption")
+            exit()
+        else:
+            print("custom key too short or too long")
+            time.sleep(1)
+            exit()
+
+
+
+elif dokey == "n":
+
+    f = open("key.txt", "r")
+    key = f.read(26)
+    f.close()
+
+    print("processing key...")
+
+    ver = len(key)
+
+    time.sleep(1)
+
+    if ver == 26:
+
+        a = key[0]
+        b = key[1]
+        c = key[2]
+        d = key[3]
+        e = key[4]
+        f = key[5]
+        g = key[6]
+        h = key[7]
+        i = key[8]
+        j = key[9]
+        k = key[10]
+        l = key[11]
+        m = key[12]
+        n = key[13]
+        o = key[14]
+        p = key[15]
+        q = key[16]
+        r = key[17]
+        s = key[18]
+        t = key[19]
+        u = key[20]
+        v = key[21]
+        w = key[22]
+        x = key[23]
+        y = key[24]
+        z = key[25]
+
+        crypt = input("Decrypt Or Encrypt?\nd/e : ")
+
+        if crypt == "e":
+            print("----Loku's Encryption 2----")
+            time.sleep(1)
+
+            encrypt = input("What Do You Want To Encrypt? : ")
+            print("encrypting...")
+
+            encrypt = encrypt.lower()
+            encrypt = encrypt.replace("a", a)
+            encrypt = encrypt.replace("b", b)
+            encrypt = encrypt.replace("c", c)
+            encrypt = encrypt.replace("d", d)
+            encrypt = encrypt.replace("e", e)
+            encrypt = encrypt.replace("f", f)
+            encrypt = encrypt.replace("g", g)
+            encrypt = encrypt.replace("h", h)
+            encrypt = encrypt.replace("i", i)
+            encrypt = encrypt.replace("j", j)
+            encrypt = encrypt.replace("k", k)
+            encrypt = encrypt.replace("l", l)
+            encrypt = encrypt.replace("m", m)
+            encrypt = encrypt.replace("n", n)
+            encrypt = encrypt.replace("o", o)
+            encrypt = encrypt.replace("p", p)
+            encrypt = encrypt.replace("q", q)
+            encrypt = encrypt.replace("r", r)
+            encrypt = encrypt.replace("s", s)
+            encrypt = encrypt.replace("t", t)
+            encrypt = encrypt.replace("u", u)
+            encrypt = encrypt.replace("v", v)
+            encrypt = encrypt.replace("w", w)
+            encrypt = encrypt.replace("x", x)
+            encrypt = encrypt.replace("y", y)
+            encrypt = encrypt.replace("z", z)
+            print(encrypt)
+            print("encryption complete")
+            time.sleep(1)
+            exit()
+
+        elif crypt == "d":
+            print("----Loku's Decryption 2----")
+            time.sleep(1)
+            decrypt = input("What Do You Want To Decrypt? : ")
+            print("decrypting...")
+            decrypt = decrypt.replace(a, "a")
+            decrypt = decrypt.replace(b, "b")
+            decrypt = decrypt.replace(c, "c")
+            decrypt = decrypt.replace(d, "d")
+            decrypt = decrypt.replace(e, "e")
+            decrypt = decrypt.replace(f, "f")
+            decrypt = decrypt.replace(g, "g")
+            decrypt = decrypt.replace(h, "h")
+            decrypt = decrypt.replace(i, "i")
+            decrypt = decrypt.replace(j, "j")
+            decrypt = decrypt.replace(k, "k")
+            decrypt = decrypt.replace(l, "l")
+            decrypt = decrypt.replace(m, "m")
+            decrypt = decrypt.replace(n, "n")
+            decrypt = decrypt.replace(o, "o")
+            decrypt = decrypt.replace(p, "p")
+            decrypt = decrypt.replace(q, "q")
+            decrypt = decrypt.replace(r, "r")
+            decrypt = decrypt.replace(s, "s")
+            decrypt = decrypt.replace(t, "t")
+            decrypt = decrypt.replace(u, "u")
+            decrypt = decrypt.replace(v, "v")
+            decrypt = decrypt.replace(w, "w")
+            decrypt = decrypt.replace(x, "x")
+            decrypt = decrypt.replace(y, "y")
+            decrypt = decrypt.replace(z, "z")
+            print(decrypt)
+            print("Decryption Complete")
+            time.sleep(1)
+            exit()
+        else:
+            print("invalid response")
+            time.sleep(1)
+            exit()
+    else:
+        print("Invalid key, must be 26 characters long")
+        time.sleep(1)
+        exit()
+else:
+    print("invalid response")
+    time.sleep(1)
+    exit()
