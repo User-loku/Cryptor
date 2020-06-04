@@ -1,0 +1,47 @@
+
+using System;
+
+namespace Cryptor
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Loku's Cryptor C# Edition");
+			Console.WriteLine("Encrypt(1), Decrypt(2), Key(3)");
+			string cryo1 = Console.ReadLine();
+			string builtkey = "!@#$%^&*()~`1234567890+=?<>/"; //-----DO NOT CHANGE
+			string key = "%*0!82/$7@#)&+>5~<936(?`4=1^";
+			{			
+				if (cryo1 == "1") Console.WriteLine("What Do You Need Encrypted? *lowercase only" +
+				                                    "");
+							string encrypt = Console.ReadLine();
+							string A = builtkey.Substring(0,1); string B = builtkey.Substring(1,1); string C = builtkey.Substring(2,1); string D = builtkey.Substring(3,1); string E = builtkey.Substring(4,1); string F = builtkey.Substring(5,1); string G = builtkey.Substring(6,1); string H = builtkey.Substring(7,1); string I = builtkey.Substring(8,1); string J = builtkey.Substring(9,1); string K = builtkey.Substring(10,1); string L = builtkey.Substring(11,1); string M = builtkey.Substring(12,1); string N = builtkey.Substring(13,1); string O = builtkey.Substring(14,1); string P = builtkey.Substring(15,1); string Q = builtkey.Substring(16,1); string R = builtkey.Substring(17,1); string S = builtkey.Substring(18,1); string T = builtkey.Substring(19,1); string U = builtkey.Substring(20,1); string V = builtkey.Substring(21,1); string W = builtkey.Substring(22,1); string X = builtkey.Substring(23,1); string Y = builtkey.Substring(24,1); string Z = builtkey.Substring(25,1); string spa = builtkey.Substring(26,1);
+							encrypt = encrypt.Replace("a", A); encrypt = encrypt.Replace("b", B); encrypt = encrypt.Replace("c", C); encrypt = encrypt.Replace("d", D); encrypt = encrypt.Replace("e", E);  encrypt = encrypt.Replace("f", F); encrypt = encrypt.Replace("g", G);  encrypt = encrypt.Replace("h", H);  encrypt = encrypt.Replace("i", I);  encrypt = encrypt.Replace("j", J); encrypt = encrypt.Replace("k", K);  encrypt = encrypt.Replace("l", L);  encrypt = encrypt.Replace("m", M); encrypt = encrypt.Replace("n", N); encrypt = encrypt.Replace("o", O); encrypt = encrypt.Replace("p", P); encrypt = encrypt.Replace("q", Q);   encrypt = encrypt.Replace("r", R);  encrypt = encrypt.Replace("s", S);  encrypt = encrypt.Replace("t", T);  encrypt = encrypt.Replace("u", U);  encrypt = encrypt.Replace("v", V); encrypt = encrypt.Replace("w", W);  encrypt = encrypt.Replace("x", X); encrypt = encrypt.Replace("y", Y); encrypt = encrypt.Replace("z", Z); encrypt = encrypt.Replace(" ", spa);
+							string a = key.Substring(0,1); string b = key.Substring(1,1); string c = key.Substring(2,1); string d = key.Substring(3,1); string e = key.Substring(4,1); string f = key.Substring(5,1); string g = key.Substring(6,1); string h = key.Substring(7,1); string i = key.Substring(8,1); string j = key.Substring(9,1); string k = key.Substring(10,1); string l = key.Substring(11,1); string m = key.Substring(12,1); string n = key.Substring(13,1); string o = key.Substring(14,1); string p = key.Substring(15,1); string q = key.Substring(16,1); string r = key.Substring(17,1); string s = key.Substring(18,1); string t = key.Substring(19,1); string u = key.Substring(20,1); string v = key.Substring(21,1); string w = key.Substring(22,1); string x = key.Substring(23,1); string y = key.Substring(24,1); string z = key.Substring(25,1); string SPA = key.Substring(26,1);
+							encrypt = encrypt.Replace("a", a); encrypt = encrypt.Replace("b", b); encrypt = encrypt.Replace("c", c); encrypt = encrypt.Replace("d", d); encrypt = encrypt.Replace("e", e);  encrypt = encrypt.Replace("f", f); encrypt = encrypt.Replace("g", g);  encrypt = encrypt.Replace("h", h);  encrypt = encrypt.Replace("i", i);  encrypt = encrypt.Replace("j", j); encrypt = encrypt.Replace("k", k);  encrypt = encrypt.Replace("l", l);  encrypt = encrypt.Replace("m", m); encrypt = encrypt.Replace("n", n); encrypt = encrypt.Replace("o", o); encrypt = encrypt.Replace("p", p); encrypt = encrypt.Replace("q", q);   encrypt = encrypt.Replace("r", r);  encrypt = encrypt.Replace("s", s);  encrypt = encrypt.Replace("t", t);  encrypt = encrypt.Replace("u", u);  encrypt = encrypt.Replace("v", v); encrypt = encrypt.Replace("w", w);  encrypt = encrypt.Replace("x", x); encrypt = encrypt.Replace("y", y); encrypt = encrypt.Replace("z", z); encrypt = encrypt.Replace(" ", SPA);
+							Console.WriteLine(encrypt);
+				
+				Console.WriteLine("press enter");
+			}
+			{
+				
+				if (cryo1 == "2") Console.WriteLine("What Do You Need Decrypted?");
+						string decrypt = Console.ReadLine();
+						string A = builtkey.Substring(0,1); string B = builtkey.Substring(1,1); string C = builtkey.Substring(2,1); string D = builtkey.Substring(3,1); string E = builtkey.Substring(4,1); string F = builtkey.Substring(5,1); string G = builtkey.Substring(6,1); string H = builtkey.Substring(7,1); string I = builtkey.Substring(8,1); string J = builtkey.Substring(9,1); string K = builtkey.Substring(10,1); string L = builtkey.Substring(11,1); string M = builtkey.Substring(12,1); string N = builtkey.Substring(13,1); string O = builtkey.Substring(14,1); string P = builtkey.Substring(15,1); string Q = builtkey.Substring(16,1); string R = builtkey.Substring(17,1); string S = builtkey.Substring(18,1); string T = builtkey.Substring(19,1); string U = builtkey.Substring(20,1); string V = builtkey.Substring(21,1); string W = builtkey.Substring(22,1); string X = builtkey.Substring(23,1); string Y = builtkey.Substring(24,1); string Z = builtkey.Substring(25,1); string spa = builtkey.Substring(26,1);
+						decrypt = decrypt.Replace(A, "a"); decrypt = decrypt.Replace(B, "b"); decrypt = decrypt.Replace(C, "c"); decrypt = decrypt.Replace(D, "d"); decrypt = decrypt.Replace(E, "e");  decrypt = decrypt.Replace(F, "f"); decrypt = decrypt.Replace(G, "g");  decrypt = decrypt.Replace(H, "h");  decrypt = decrypt.Replace(I, "i");  decrypt = decrypt.Replace(J, "j"); decrypt = decrypt.Replace(K, "k");  decrypt = decrypt.Replace(L, "l");  decrypt = decrypt.Replace(M, "m"); decrypt = decrypt.Replace(N, "n"); decrypt = decrypt.Replace(O, "o"); decrypt = decrypt.Replace(P, "p"); decrypt = decrypt.Replace(Q, "q");   decrypt = decrypt.Replace(R, "r");  decrypt = decrypt.Replace(S, "s");  decrypt = decrypt.Replace(T, "t");  decrypt = decrypt.Replace(U, "u");  decrypt = decrypt.Replace(V, "v"); decrypt = decrypt.Replace(W, "w");  decrypt = decrypt.Replace(X, "x"); decrypt = decrypt.Replace(Y, "y"); decrypt = decrypt.Replace(Z, "z"); decrypt = decrypt.Replace(spa, " ");
+						string a = key.Substring(0,1); string b = key.Substring(1,1); string c = key.Substring(2,1); string d = key.Substring(3,1); string e = key.Substring(4,1); string f = key.Substring(5,1); string g = key.Substring(6,1); string h = key.Substring(7,1); string i = key.Substring(8,1); string j = key.Substring(9,1); string k = key.Substring(10,1); string l = key.Substring(11,1); string m = key.Substring(12,1); string n = key.Substring(13,1); string o = key.Substring(14,1); string p = key.Substring(15,1); string q = key.Substring(16,1); string r = key.Substring(17,1); string s = key.Substring(18,1); string t = key.Substring(19,1); string u = key.Substring(20,1); string v = key.Substring(21,1); string w = key.Substring(22,1); string x = key.Substring(23,1); string y = key.Substring(24,1); string z = key.Substring(25,1); string SPA = key.Substring(26,1);
+						decrypt = decrypt.Replace(a, "a"); decrypt = decrypt.Replace(b, "b"); decrypt = decrypt.Replace(c, "c"); decrypt = decrypt.Replace(d, "d"); decrypt = decrypt.Replace(e, "e");  decrypt = decrypt.Replace(f, "f"); decrypt = decrypt.Replace(g, "g");  decrypt = decrypt.Replace(h, "h");  decrypt = decrypt.Replace(i, "i");  decrypt = decrypt.Replace(j, "j"); decrypt = decrypt.Replace(k, "k");  decrypt = decrypt.Replace(l, "l");  decrypt = decrypt.Replace(m, "m"); decrypt = decrypt.Replace(n, "n"); decrypt = decrypt.Replace(o, "o"); decrypt = decrypt.Replace(p, "p"); decrypt = decrypt.Replace(q, "q");   decrypt = decrypt.Replace(r, "r");  decrypt = decrypt.Replace(s, "s");  decrypt = decrypt.Replace(t, "t");  decrypt = decrypt.Replace(u, "u");  decrypt = decrypt.Replace(v, "v"); decrypt = decrypt.Replace(w, "w");  decrypt = decrypt.Replace(x, "x"); decrypt = decrypt.Replace(y, "y"); decrypt = decrypt.Replace(z, "z"); decrypt = decrypt.Replace(SPA, " ");
+						Console.WriteLine(decrypt);
+				Console.WriteLine("press enter");
+				
+			}
+			{
+				if (cryo1 == "3") Console.WriteLine("Do you have a key(1) Or do you need a randomized one(2)");
+				string keyo1 = Console.ReadLine();
+			}
+			Console.Write("Press enter to end cryptor");
+			Console.ReadKey(true);
+		}
+	}
+}
